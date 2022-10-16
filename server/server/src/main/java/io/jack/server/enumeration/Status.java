@@ -1,4 +1,4 @@
-package main.java.io.jack.server.enumeration;
+package io.jack.server.enumeration;
 
 /**
  * @author Jack Keller

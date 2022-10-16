@@ -1,6 +1,6 @@
-package main.java.io.jack.server.model;
+package io.jack.server.model;
 
-import main.java.io.jack.server.enumeration.Status;
+import io.jack.server.enumeration.Status;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,8 +8,11 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotEmpty;
 
 import static javax.persistence.GenerationType.AUTO;
+
+import javax.persistence.Column;
 
 /**
  * @author Jack Keller
