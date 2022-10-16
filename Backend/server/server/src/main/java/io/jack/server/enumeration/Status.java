@@ -1,4 +1,4 @@
-package io.jack.server.enumeration;
+package main.java.io.jack.server.enumeration;
 
 /**
  * @author Jack Keller
@@ -11,7 +11,7 @@ package io.jack.server.enumeration;
     
     private final String status;
 
-    Status(Status status) {
+    Status(String status) {
         this.status = status;
     }
 
