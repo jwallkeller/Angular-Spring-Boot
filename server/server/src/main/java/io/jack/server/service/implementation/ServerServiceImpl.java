@@ -2,9 +2,12 @@ package io.jack.server.service.implementation;
 
 import java.net.InetAddress;
 import java.util.Collection;
+import java.util.Random;
 
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
 import javax.transaction.Transactional;
 
 import io.jack.server.enumeration.Status;
@@ -64,6 +67,7 @@ public class ServerServiceImpl implements ServerService {
 	}
 	
 	private String setServerImageUrl() {
-		return null;
+		String[] imageNames = { "server1.png", "server2.png", "server3.png", "server4.png" };
+		return ServletUriComponentsBuilder.fromCurrentContextPath().path("/server/image/" + imageNames[new Random().nextInt(4)]).toUriString();
 	}
 }
